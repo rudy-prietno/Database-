@@ -1,0 +1,38 @@
+version: "3.8"
+services:
+  jupyter:
+    build:
+      context: ./jupyter
+    ports:
+      - "8888:8888"
+    user: root
+    environment: 
+      - NB_USER=rudy
+      - CHOWN_HOME=yes
+    working_dir: /home/rudy
+    networks:
+      - stack
+    volumes:
+      - "./notebooks:/notebooks" 
+      - "./data:/data"
+          
+  postgres:
+    container_name: postgres_container
+    image: postgres
+    environment:
+      - POSTGRES_USER: postgres
+      - POSTGRES_PASSWORD: postgres
+      - PGDATA: /data/postgres
+    volumes:
+      - postgres:/data/postgres
+    ports:
+      - "5432:5432"
+    networks:
+      - stack
+    restart: unless-stopped
+
+networks:
+  stack:
+  
+volumes:
+  jupyter:
