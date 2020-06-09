@@ -9,5 +9,12 @@ The database- is repositories to:
 
 ## How did it work?
 
+
 - first 
-    - run file docker-compose.yml
+    - run file docker-compose.yml : docker-compose -f Database-/docker-compose.yml up -d
+
+
+- second
+    - check container : docker container ls --all
+
+- 
