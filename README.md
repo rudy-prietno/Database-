@@ -13,8 +13,12 @@ The database- is repositories to:
 - first 
     - run file docker-compose.yml : docker-compose -f Database-/docker-compose.yml up -d
 
-
 - second
     - check container : docker container ls --all
 
-- 
+- third
+    - check the logs Jupyter if the container ready, to get the token access : docker log 'container name'
+
+- fourth
+    - if you can open the jupyter worksheet, run the script 'Ingest csv to db.pynb'
+
