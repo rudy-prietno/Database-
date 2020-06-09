@@ -18,4 +18,6 @@ The database- is repositories to:
     - check the logs Jupyter if the container ready, to get the token access : docker log 'container name'
 - fourth
     - if you can open the jupyter worksheet, run the script 'Ingest csv to db.pynb'
+- fifth
+    -  run your complex query to doing aggregation data
 
