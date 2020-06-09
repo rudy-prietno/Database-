@@ -6,4 +6,4 @@ The database- is repositories to:
 - how to build a query from python in Jupyter notebook.
 - and making a simple visualization using Plotly.
 
-## how did it work?
+## How did it work?
